@@ -69,7 +69,7 @@ mkdir(path)
 ```
 
 
-#### write_file
+#### write_file.
 ```javascript
 /*
 this is a humble function that make a file a writes a string on it
@@ -80,7 +80,7 @@ write_file((path, string = ''))
 ```
 
 
-#### read_file
+#### read_file.
 ```javascript
 /*
 reads a text from a file returns as a string
@@ -90,7 +90,7 @@ read_file(path)
 ```
 
 
-#### mv
+#### mv.
 ```javascript
 /*
 remove an file
@@ -101,7 +101,7 @@ mv(from_path, to_path)
 ```
 
 
-#### rm_file
+#### rm_file.
 ```javascript
 /*
 remove an file
@@ -111,51 +111,78 @@ rm_file(pat)
 ```
 
 
-rm_dir
+#### rm_dir.
+```javascript
+/*
 remove an directory, with options can be passed
 @param {String} path
 @obj {
   recursive: true
   force: true
   } options
+*/
 rm_dir(path, options)
+```
    
-## Json Functins
+### Json Functins
 
-write_json.
+#### write_json.
+```javascript
+/*
 @param {} obj
 @param {} path
+*/
 write_json(obj, path) 
-   
+```   
 
-read_json.
+#### read_json.
+```javascript
+/*
 @param {} path
+*/
 read_json(path)
+```
    
 
-delete_json.
+#### delete_json.
+```javascript
+/*
 @param {} path
+*/
 delete_json(path)
-   
-## Binary functions
+```
 
-read_binary.
+### Binary functions
+
+#### read_binary.
+```javascript
+/*
 this function reads a binary file from disk
 return a binary buffer obj
 @param {} path
+*/
 read_binary(path)
+```
 
 
-write_binary.
+#### write_binary.
+```javascript
+/*
 this function writes down a binary file to disk
 from a binary buff
 @param {} buff
 @param {} path
+*/
 write_binary(buff, path)
+```
    
 
-write_binstr.
+#### write_binstr.
+```javascript
+/*
 this function writes down a binary string to disk
 @param {} bin_string
 @param {} path
+*/
 write_binstr(bin_str, path)
+```
