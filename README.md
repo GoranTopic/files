@@ -124,7 +124,7 @@ remove an directory, with options can be passed
 rm_dir(path, options)
 ```
    
-### Json Functins
+### Json Functions
 
 #### write_json.
 ```javascript
