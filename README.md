@@ -5,9 +5,11 @@
 ### Syncronous function
 
 #### file_exists. 
-returns true if file exists
-```
-@param {String} path
+```javascript
+/*
+*returns true if file exists
+*@param {String} path
+*/
 file_exists(path)
 ```
 
