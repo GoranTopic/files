@@ -1,45 +1,46 @@
-# This is my personal lib to handle files with nodejs 
+# 
 
-## Syncronous files
+## This is my personal lib to handle files with nodejs 
 
+### Syncronous function
 
-fileExists. returns true if file exists
+####file_exists. 
+returns true if file exists
 @param {String} path
-file_exists(path)
+```file_exists(path)```
 
 
-fileNotExists.
+####fileNotExists.
 @param {String} path
-file_not_exists(path)
+```file_not_exists(path)```
 
 
-ls_dir
+####ls_dir
 list all file from directory path
 this function returns a list of all values from a directory
 @param String path
-ls_dir(path)
+```ls_dir(path)```
 
 
-list directories.
+####list directories.
 this function returns a list of directoris with in the passed directory
 @param String path
-ls_dirs(path)
+```ls_dirs(path)```
 
 
-list all files in directory
+####list all files in directory
 this function returns a list of files with in the passed directory
 @param String path
-ls_files(path)
+```ls_files(path)```
 
 
-mkdir.
+####mkdir.
 this is a humble function that make a directory that is passed
 if creates the directories recursibly
 @param {string} path to directory
 relative paths are from the current working dir
 ex:./data/mined/companies
 mkdir(path)
-   
 
 write_file
 this is a humble function that make a file a writes a string on it
