@@ -4,13 +4,15 @@
 
 ### Syncronous function
 
-####file_exists. 
+#### file_exists. 
 returns true if file exists
+```
 @param {String} path
-```file_exists(path)```
+file_exists(path)
+```
 
 
-####fileNotExists.
+####file_not_exists.
 @param {String} path
 ```file_not_exists(path)```
 
