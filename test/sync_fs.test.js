@@ -13,7 +13,7 @@ import {
 } from '../index.js'
 import assert from 'assert';
 
-let cwd = process.cwd() + '/test/dirs/';
+let cwd = process.cwd() + '/test/files/';
 
 const list = ['dir1', 'dir2', 'dir3', 'file1.txt', 'file2.json', 'file3.json']
 const dirs = ['dir1', 'dir2', 'dir3' ]
