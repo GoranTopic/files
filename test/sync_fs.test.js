@@ -15,9 +15,9 @@ import assert from 'assert';
 
 let cwd = process.cwd() + '/test/files/';
 
-const list = ['dir1', 'dir2', 'dir3', 'file1.txt', 'file2.json', 'file3.json']
+const list = ['dir1', 'dir2', 'dir3', 'file1.jpg', 'file2.pdf', 'file3.json']
 const dirs = ['dir1', 'dir2', 'dir3' ]
-const files = ['file1.txt', 'file2.json', 'file3.json']
+const files = ['file1.jpg', 'file2.pdf', 'file3.json']
 
 // test reading filsystem
 describe('file system functions', () => {
@@ -34,7 +34,7 @@ describe('file system functions', () => {
                 expect: false 
             },{ 
                 label: 'file exists', 
-                args: cwd + 'file1.txt', 
+                args: cwd + 'file1.jpg', 
                 expect: true 
             },{ 
                 label: 'file does not exists', 
@@ -62,7 +62,7 @@ describe('file system functions', () => {
                 expect: true 
             },{ 
                 label: 'file exists', 
-                args: cwd + 'file1.txt', 
+                args: cwd + 'file1.jpg', 
                 expect: false 
             },{ 
                 label: 'file does not exists', 
