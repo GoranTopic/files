@@ -1,6 +1,6 @@
 # 
 
-## This is my personal lib to handle files with nodejs 
+## My personal library to handle files in nodejs 
 
 ### Syncronous function
 
