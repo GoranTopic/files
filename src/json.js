@@ -9,14 +9,15 @@ import fs from 'fs'
  * @param {} obj
  * @param {} path
  */
-const write_json = (obj, path) => {
+const write_json = (obj, path, options={}) => {
+    let quiet = options.quiet ?? true;
     try{
         let str = JSON.stringify(obj)
         fs.writeFileSync(path, str);
         return true
     }catch(e) {
-        console.error('could not write file');
-        return false
+        if(quiet) return false
+        else throw e;
     }
 }
 
@@ -25,13 +26,14 @@ const write_json = (obj, path) => {
  *
  * @param {} path
  */
-const read_json = path => {
+const read_json = (path, options={}) => {
+    let quiet = options.quiet ?? true;
     try{
         let str = fs.readFileSync(path);
         return JSON.parse(str)
     }catch(e) {
-        console.error('could not read file ' + e);
-        return null
+        if(quiet) return false
+        else throw e;
     }
 }
 
@@ -40,12 +42,13 @@ const read_json = path => {
  *
  * @param {} path
  */
-const delete_json = path => {
+const delete_json = (path, options={}) => {
+    let quiet = options.quiet ?? true;
     try{
         return fs.unlinkSync(path);
     }catch(e) {
-        console.error('could not delete json file ' + e);
-        return null
+        if(quiet) return false
+        else throw e;
     }
 }
 
